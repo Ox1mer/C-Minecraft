@@ -1,7 +1,4 @@
-Copyright (c) [year] [fullname]
+Copyright (c) 2025 Ox1mer
 
-All rights reserved.
-
-You may view the source code for educational purposes only. 
-Any reproduction, distribution, modification, or commercial use 
-without explicit permission is strictly prohibited.
+This project is licensed for educational and personal inspection only.  
+All rights reserved. Commercial or derivative use is not allowed without permission.
