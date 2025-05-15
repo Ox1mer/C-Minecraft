@@ -127,24 +127,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CameraConfig.h" />
+    <ClInclude Include="CameraFrustum.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Mat4.h" />
     <ClInclude Include="Mine2.h" />
+    <ClInclude Include="Plane.h" />
     <ClInclude Include="Position3D.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Rotation3D.h" />
     <ClInclude Include="Scale3D.h" />
+    <ClInclude Include="ScreenPoint.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Transform.h" />
     <ClInclude Include="Vec2.h" />
     <ClInclude Include="Vec3.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CameraConfig.cpp" />
+    <ClCompile Include="CameraFrustum.cpp" />
     <ClCompile Include="Mat4.cpp" />
     <ClCompile Include="Mine2.cpp" />
+    <ClCompile Include="Plane.cpp" />
     <ClCompile Include="Position3D.cpp" />
     <ClCompile Include="Rotation3D.cpp" />
     <ClCompile Include="Scale3D.cpp" />
+    <ClCompile Include="ScreenPoint.cpp" />
     <ClCompile Include="Transform.cpp" />
     <ClCompile Include="Vec2.cpp" />
     <ClCompile Include="Vec3.cpp" />
