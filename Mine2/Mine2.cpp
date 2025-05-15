@@ -17,7 +17,6 @@ ATOM                MyRegisterClass(HINSTANCE hInstance);
 BOOL                InitInstance(HINSTANCE, int);
 LRESULT CALLBACK    WndProc(HWND, UINT, WPARAM, LPARAM);
 
-// Твоя функция обновления кадра
 void frameUpdate() {
     // Здесь будет логика, выполняемая каждый кадр
 }
@@ -62,7 +61,6 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
             DispatchMessage(&msg);
         }
 
-        // Вызов пользовательской функции обновления логики/кадра
         frameUpdate();
 
         // Вызов перерисовки окна
