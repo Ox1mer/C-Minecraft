@@ -35,3 +35,8 @@ I’m still learning C++ and appreciate any suggestions, bug reports, or feature
 Я пока не эксперт в C++, поэтому буду рад любым предложениям, отчётам об ошибках и идеям по улучшению. Пишите в Telegram: **[@oximer31](https://t.me/oximer31)**.
 
 ---
+
+Copyright (c) 2025 Ox1mer
+
+This project is licensed for educational and personal inspection only.  
+All rights reserved. Commercial or derivative use is not allowed without permission.
