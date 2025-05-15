@@ -23,7 +23,7 @@ protected:
 	Vec3 forwardVector;
 	Vec3 upVector;
 	Vec3 rightVector;
-	CameraFrustum cameraFrustum;
+	Frustum cameraFrustum;
 	int fov;
 
 	// Distances to frustum planes of camera
@@ -35,13 +35,13 @@ protected:
 	Mat4 perspectiveMatrix;
 	std::array<Plane, 6> frustumPlanes;
 
-	Vec3 _calculateForwardVector();
-	Vec3 _calculateRightVector();
-	Vec3 _calculateUpVector();
+	Vec3 _calculateForwardVector() const;
+	Vec3 _calculateRightVector() const;
+	Vec3 _calculateUpVector() const;
 
-	Mat4 _getViewMatrix();
-	Mat4 _getPerspectiveMatrix();
-	std::array<Plane, 6> _getFrustumPlanes();
+	Mat4 _calculateViewMatrix() const;
+	Mat4 _calculatePerspectiveMatrix() const;
+	std::array<Plane, 6> _calculateFrustumPlanes();
 
 
 public:
@@ -56,8 +56,8 @@ public:
 	// Getters
 	int getXPixelSizeOfScreen() const;
 	int getYPixelSizeOfScreen() const;
-	Vec3 getForwardVector() const;
-	Vec3 getRightVector() const;
-	Vec3 getUpVector() const;
+	const Vec3& getForwardVector() const;
+	const Vec3& getRightVector() const;
+	const Vec3& getUpVector() const;
 };
 
