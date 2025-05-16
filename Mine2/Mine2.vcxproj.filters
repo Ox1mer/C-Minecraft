@@ -81,6 +81,9 @@
     <ClInclude Include="Entity.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="CubePlane.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Mine2.cpp">
@@ -138,6 +141,9 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="Entity.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="CubePlane.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

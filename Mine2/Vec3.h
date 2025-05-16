@@ -3,6 +3,8 @@
 #include <cmath>
 #include <iostream>
 
+#include "Position3D.h"
+
 struct Vec3
 {
 	double x, y, z;

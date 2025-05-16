@@ -1,5 +1,7 @@
 #include "Camera.h"
 
+
+
 constexpr double PI = 3.14159265358979323846;
 
 static double degreesToRadians(double degrees) {
@@ -80,6 +82,20 @@ const Vec3& Camera::getRightVector() const {
 const Vec3& Camera::getUpVector() const {
     return upVector;
 }
+
+void Camera::rotate(float deltaYaw, float deltaPitch) {
+    float pitch = transform.getRotation().pitch + deltaPitch;
+    float yaw = transform.getRotation().yaw + deltaYaw;
+    float roll = transform.getRotation().roll;
+
+    if (pitch > 89.0f) pitch = 89.0f;
+    if (pitch < -89.0f) pitch = -89.0f;
+
+    transform.setRotation(pitch, yaw, roll);
+
+    update();
+}
+
 
 Vec3 Camera::_calculateForwardVector() const {
     double pitchRad = degreesToRadians(transform.getRotation().pitch);

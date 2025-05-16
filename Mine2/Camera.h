@@ -1,6 +1,10 @@
 #pragma once
 
 #include <array>
+#include <algorithm>
+#include <cstdint>
+#include <iomanip>
+#include <iostream>
 
 #include "Transform.h"
 #include "Vec2.h"
@@ -52,7 +56,7 @@ public:
 	void update();
 	bool isPointInFrustum(const Position3D& point);
 	bool projectWorldToScreen(const Position3D& pointPos, ScreenPoint& screenPoint) const;
-
+	void rotate(float deltaYaw, float deltaPitch);
 	// Getters
 	int getXPixelSizeOfScreen() const;
 	int getYPixelSizeOfScreen() const;
