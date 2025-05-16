@@ -180,54 +180,34 @@ void onStart() {
 
     zBuffer.resize(screenW * screenH, 1e9);
 
-    chunk.addBlockToChunk(Block(Transform(Position3D(0, 0, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(0, 0, 1), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(0, 0, 2), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(0, 0, 3), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(0, 0, 4), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(1, 0, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(2, 0, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(3, 0, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
+    chunk.addBlockToChunk(Block(Transform(Position3D(10, 0, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
+    chunk.addBlockToChunk(Block(Transform(Position3D(9, 0, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
+    chunk.addBlockToChunk(Block(Transform(Position3D(8, 0, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
+    chunk.addBlockToChunk(Block(Transform(Position3D(7, 0, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
+    chunk.addBlockToChunk(Block(Transform(Position3D(7, 1, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
     chunk.addBlockToChunk(Block(Transform(Position3D(4, 0, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(4, 0, 1), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(4, 0, 2), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(4, 0, 3), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(4, 0, 4), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(3, 0, 4), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(1, 0, 4), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-
-    chunk.addBlockToChunk(Block(Transform(Position3D(0, 1, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(0, 1, 1), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(0, 1, 2), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(0, 1, 3), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(0, 1, 4), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(1, 1, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(2, 1, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(3, 1, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
     chunk.addBlockToChunk(Block(Transform(Position3D(4, 1, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(4, 1, 1), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(4, 1, 2), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(4, 1, 3), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(4, 1, 4), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(3, 1, 4), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(1, 1, 4), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
 
-    chunk.addBlockToChunk(Block(Transform(Position3D(0, 2, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(0, 2, 1), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(0, 2, 2), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(0, 2, 3), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(0, 2, 4), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(1, 2, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(2, 2, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(3, 2, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
+    chunk.addBlockToChunk(Block(Transform(Position3D(10, 2, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
+    chunk.addBlockToChunk(Block(Transform(Position3D(10, 3, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
+    chunk.addBlockToChunk(Block(Transform(Position3D(10, 4, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
+    chunk.addBlockToChunk(Block(Transform(Position3D(9, 2, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
+    chunk.addBlockToChunk(Block(Transform(Position3D(8, 2, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
+    chunk.addBlockToChunk(Block(Transform(Position3D(7, 2, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
+    chunk.addBlockToChunk(Block(Transform(Position3D(7, 3, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
+    chunk.addBlockToChunk(Block(Transform(Position3D(7, 4, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
+    chunk.addBlockToChunk(Block(Transform(Position3D(6, 2, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
+    chunk.addBlockToChunk(Block(Transform(Position3D(6, 4, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
+    chunk.addBlockToChunk(Block(Transform(Position3D(5, 2, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
+    chunk.addBlockToChunk(Block(Transform(Position3D(5, 4, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
     chunk.addBlockToChunk(Block(Transform(Position3D(4, 2, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(4, 2, 1), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(4, 2, 2), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(4, 2, 3), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(4, 2, 4), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(3, 2, 4), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(2, 2, 4), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
-    chunk.addBlockToChunk(Block(Transform(Position3D(1, 2, 4), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
+    chunk.addBlockToChunk(Block(Transform(Position3D(4, 4, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
+
+
+    chunk.addBlockToChunk(Block(Transform(Position3D(15, 0, 15), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
+    chunk.addBlockToChunk(Block(Transform(Position3D(15, 0, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
+    chunk.addBlockToChunk(Block(Transform(Position3D(0, 0, 15), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
+    chunk.addBlockToChunk(Block(Transform(Position3D(0, 0, 0), Rotation3D(0, 0, 0), Scale3D(1, 1, 1))));
 
     worldBlocks = chunk.getChunkBlocks();
 
